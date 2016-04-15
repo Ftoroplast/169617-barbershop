@@ -1,114 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Барбершоп «Бородинский»</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <nav class="main-navigation">
-        <ul>
-          <li>
-            <a href="#"><img src="http://placehold.it/200x50" width="200" height="50" alt="Barbershop"></a>
-          </li>
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Новости</a>
-          </li>
-          <li>
-            <a href="#">Прайс-лист</a>
-          </li>
-          <li>
-            <a href="#">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="user-block">
-        <a class="login" href="#">Вход</a>
+  <head>
+    <meta charset="UTF-8">
+    <title>Барбершоп «Бородинский»</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img class="logo__picture" src="http://placehold.it/200x50" width="200" height="50" alt="Barbershop">
+          </a>
+        </div>
+        <nav class="site-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="user-block__login" href="#">Вход</a>
+        </div>
       </div>
-    </div>
-  </header>
-  <main class="container">
-    <header class="page-header">
-      <h1 class="page-header-title">Набор для путешествий &#171;Baxter of California&#187;</h1>
-      <nav class="breadcrumbs">
-        <ul>
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Средства для ухода</a>
-          </li>
-          <li>
-            <a href="#">Набор для путешествий &#171;Baxter of California&#187;</a>
-          </li>
-        </ul>
-      </nav>
     </header>
-    <div class="images">
-      <div class="active-image">
-        <img src="http://placehold.it/500x700" width="500" height="700" alt="Набор для путешествий &#171;Baxter of California&#187;">
+
+    <main class="container">
+      <header class="page-header">
+        <h1 class="page-header__title">Набор для путешествий &#171;Baxter of California&#187;</h1>
+        <nav class="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Средства для ухода</a>
+            </li>
+            <li>
+              <a href="#">Набор для путешествий &#171;Baxter of California&#187;</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="images">
+        <div class="image image--active">
+          <img src="http://placehold.it/500x700" width="500" height="700" alt="Набор для путешествий &#171;Baxter of California&#187;">
+        </div>
+        <div class="image">
+          <img src="http://placehold.it/150x150" width="150" height="150" alt="Набор для путешествий &#171;Baxter of California&#187;">
+        </div>
+        <div class="image">
+          <img src="http://placehold.it/150x150" width="150" height="150" alt="Набор для путешествий &#171;Baxter of California&#187;">
+        </div>
+        <div class="image">
+          <img src="http://placehold.it/150x150" width="150" height="150" alt="Набор для путешествий &#171;Baxter of California&#187;">
+        </div>
       </div>
-      <div class="image">
-        <img src="http://placehold.it/150x150" width="150" height="150" alt="Набор для путешествий &#171;Baxter of California&#187;">
+
+      <div class="description">
+        <span class="description__available-status">Есть в наличии</span>
+        <span class="description__vendor-code">Артикул: Dexter-AE</span>
+        <p class="description__text">Travel Kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится всё,
+          что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья,
+          крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+        <span class="description__price">2 900 руб.</span>
+        <a class="btn btn--buy" href="#">Купить</a>
       </div>
-      <div class="image">
-        <img src="http://placehold.it/150x150" width="150" height="150" alt="Набор для путешествий &#171;Baxter of California&#187;">
+
+      <div class="composition">
+        <span class="composition__title">В набор входят:</span>
+        <ul class="composition__list">
+          <li class="composition__item">Средство для умывания (50 мл)</li>
+          <li class="composition__item">Увлажняющий крем (50 мл)</li>
+          <li class="composition__item">Крем для бритья (50 мл)</li>
+          <li class="composition__item">Крем после бритья, шампунь (50 мл)</li>
+          <li class="composition__item">Удобная кожаная косметичка</li>
+        </ul>
       </div>
-      <div class="image">
-        <img src="http://placehold.it/150x150" width="150" height="150" alt="Набор для путешествий &#171;Baxter of California&#187;">
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+        </div>
+
+        <div class="site-footer__social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn--vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn--fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn--inst" href="#">Инстаграм</a>
+        </div>
+
+        <div class="site-footer__copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
       </div>
-    </div>
-    <div class="description">
-      <span class="description-available">Есть в наличии</span>
-      <span class="description-vendor-code">Артикул: Dexter-AE</span>
-      <p class="description-main">Travel Kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится всё,
-        что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья,
-        крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-      <span class="description-price">2 900 руб.</span>
-      <a class="btn description-buy" href="#">Купить</a>
-    </div>
-    <div class="composition">
-      <span class="composition-title">В набор входят:</span>
-      <ul class="composition-list">
-        <li>Средство для умывания (50 мл)</li>
-        <li>Увлажняющий крем (50 мл)</li>
-        <li>Крем для бритья (50 мл)</li>
-        <li>Крем после бритья, шампунь (50 мл)</li>
-        <li>Удобная кожаная косметичка</li>
-      </ul>
-    </div>
-  </main>
-  <footer class="main-footer">
-    <div class="container">
-      <div class="footer-contacts">
-        Барбершоп «Бородинский»<br>
-        Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-        <a href="#">Как нас найти?</a><br>
-        Телефон: +7 (812) 666-02-66
-      </div>
-      <div class="footer-social">
-        <p>Давайте дружить!</p>
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-      </div>
-      <div class="footer-copyright">
-        <p>Разработано:</p>
-        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
