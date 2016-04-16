@@ -9,8 +9,8 @@
   <body>
     <header class="site-header">
       <div class="container">
-        <div class="logo">
-          <a class="logo__link" href="#">
+        <div class="logo logo--nav">
+          <a class="logo__link" href="/">
             <img class="logo__picture" src="http://placehold.it/200x50" width="200" height="50" alt="Barbershop">
           </a>
         </div>
@@ -26,7 +26,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="/shop.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -45,23 +45,23 @@
         <nav class="breadcrumbs">
           <ul>
             <li>
-              <a href="#">Главная</a>
+              <a href="/">Главная</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="/shop.html">Магазин</a>
             </li>
             <li>
               <a href="#">Средства для ухода</a>
             </li>
             <li>
-              <a href="#">Набор для путешествий &#171;Baxter of California&#187;</a>
+              <a href="/item.html">Набор для путешествий &#171;Baxter of California&#187;</a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <div class="images">
-        <div class="image image--active">
+      <section class="images">
+        <div class="image image--big">
           <img src="http://placehold.it/500x700" width="500" height="700" alt="Набор для путешествий &#171;Baxter of California&#187;">
         </div>
         <div class="image">
@@ -73,9 +73,9 @@
         <div class="image">
           <img src="http://placehold.it/150x150" width="150" height="150" alt="Набор для путешествий &#171;Baxter of California&#187;">
         </div>
-      </div>
+      </section>
 
-      <div class="description">
+      <section class="description">
         <span class="description__available-status">Есть в наличии</span>
         <span class="description__vendor-code">Артикул: Dexter-AE</span>
         <p class="description__text">Travel Kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится всё,
@@ -83,10 +83,10 @@
           крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
         <span class="description__price">2 900 руб.</span>
         <a class="btn btn--buy" href="#">Купить</a>
-      </div>
+      </section>
 
-      <div class="composition">
-        <span class="composition__title">В набор входят:</span>
+      <section class="composition">
+        <h2 class="composition__title">В набор входят:</h2>
         <ul class="composition__list">
           <li class="composition__item">Средство для умывания (50 мл)</li>
           <li class="composition__item">Увлажняющий крем (50 мл)</li>
@@ -94,29 +94,29 @@
           <li class="composition__item">Крем после бритья, шампунь (50 мл)</li>
           <li class="composition__item">Удобная кожаная косметичка</li>
         </ul>
-      </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <div class="site-footer__contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (812) 666-02-66
-        </div>
+        <section class="contacts">
+          <span class="contacts__title">Барбершоп «Бородинский»</span><br>
+          <span class="contacts__address">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</span><br>
+          <a class="contacts__link" href="#">Как нас найти?</a><br>
+          <span class="contacts__phone">Телефон: <a href="tel:+78126660266">+7 (812) 666-02-66</a></span>
+        </section>
 
-        <div class="site-footer__social">
-          <p>Давайте дружить!</p>
-          <a class="social-btn social-btn--vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn--fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn--inst" href="#">Инстаграм</a>
-        </div>
+        <section class="social">
+          <p class="social__text">Давайте дружить!</p>
+          <a class="social__btn social__btn--vk" href="#">Вконтакте</a>
+          <a class="social__btn social__btn--fb" href="#">Фейсбук</a>
+          <a class="social__btn social__btn--inst" href="#">Инстаграм</a>
+        </section>
 
-        <div class="site-footer__copyright">
-          <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </div>
+        <section class="copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="btn btn--copyright" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
       </div>
     </footer>
   </body>

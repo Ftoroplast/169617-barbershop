@@ -21,7 +21,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a href="/shop.html">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -35,56 +35,60 @@
     </header>
 
     <main class="container">
-      <div class="index-logo">
+      <div class="logo logo--index">
         <img src="img/index-logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
       </div>
 
       <div class="features">
         <div class="features__item">
-          <b class="features__name">Быстро</b>
+          <p><b class="features__name">Быстро</b></p>
           <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
         </div>
         <div class="features__item">
-          <b class="features__name">Круто</b>
+          <p><b class="features__name">Круто</b></p>
           <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
         </div>
         <div class="features__item">
-          <b class="features__name">Дорого</b>
+          <p><b class="features__name">Дорого</b></p>
           <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
         </div>
       </div>
 
-      <div class="index-content">
-        <div class="index-content--left">
-          <h2 class="index-content__title">Новости</h2>
-          <ul class="news-preview">
-            <li>
-              <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-              <time datetime="2016-01-11">11 января</time>
-            </li>
-            <li>
-              <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-              <time datetime="2016-01-18">18 января</time>
-            </li>
-          </ul>
-          <a class="btn" href="#">Все новости</a>
+      <div class="content content--index">
+        <div class="content__column content__column--left">
+          <section class="news">
+            <h2 class="news__title">Новости</h2>
+            <ul class="news__preview">
+              <li class="news__item">
+                <p class="news__description">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+                <time class="news__datetime" datetime="2016-01-11">11 января</time>
+              </li>
+              <li class="news__item">
+                <p class="news__description">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+                <time class="news__datetime" datetime="2016-01-18">18 января</time>
+              </li>
+            </ul>
+            <a class="btn" href="#">Все новости</a>
+          </section>
         </div>
 
-        <div class="index-content--right">
-          <h2 class="index-content__title">Фотогалерея</h2>
+        <div class="content__column content__column--right">
+          <h2 class="content__title">Фотогалерея</h2>
           <div class="gallery">
             <figure class="gallery__content">
-              <img src="img/photo-1.jpg" width="286" height="164" alt="">
+              <a class="gallery__link" href="#">
+                <img src="img/photo-1.jpg" width="286" height="164" alt="">
+              </a>
             </figure>
-            <button class="btn btn--prev">Назад</button>
-            <button class="btn btn--next">Вперёд</button>
+            <a class="btn btn--prev" href="#">Назад</a>
+            <a class="btn btn--next" href="#">Вперёд</a>
           </div>
         </div>
       </div>
 
-      <div class="index-content">
-        <div class="index-content--left">
-          <h2 class="index-content__title">Контактная информация</h2>
+      <div class="content content--index">
+        <div class="content__column content__column--left">
+          <h2 class="content__title">Контактная информация</h2>
           <p>
             Барбершоп «Бородинский»<br>
             Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
@@ -99,39 +103,40 @@
           <a class="btn" href="#">Обратная связь</a>
         </div>
 
-        <div class="index-content--right">
-          <h2 class="index-content__title">Записаться</h2>
+        <div class="content__column content__column--right">
+          <h2 class="content__title">Записаться</h2>
           <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
             <input type="text" name="date" value="" placeholder="Дата">
             <input type="text" name="time" value="" placeholder="Время">
             <input type="text" name="name" value="" placeholder="Ваше имя">
             <input type="tel" name="phone" value="" placeholder="Телефон">
-            <button class="btn" type="submit">Отправить</button>
+            <input class="btn" type="submit" value="Отправить">
           </form>
         </div>
       </div>
     </main>
-    <footer class="site__footer">
+
+    <footer class="site-footer">
       <div class="container">
-        <div class="site-footer__contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (812) 666-02-66
-        </div>
+        <section class="contacts">
+          <span class="contacts__title">Барбершоп «Бородинский»</span><br>
+          <span class="contacts__address">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</span><br>
+          <a class="contacts__link" href="#">Как нас найти?</a><br>
+          <span class="contacts__phone">Телефон: <a href="tel:+78126660266">+7 (812) 666-02-66</a></span>
+        </section>
 
-        <div class="site-footer__social">
-          <p>Давайте дружить!</p>
-          <a class="social-btn social-btn--vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn--fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn--inst" href="#">Инстаграм</a>
-        </div>
+        <section class="social">
+          <p class="social__text">Давайте дружить!</p>
+          <a class="social__btn social__btn--vk" href="#">Вконтакте</a>
+          <a class="social__btn social__btn--fb" href="#">Фейсбук</a>
+          <a class="social__btn social__btn--inst" href="#">Инстаграм</a>
+        </section>
 
-        <div class="site-footer__copyright">
-          <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </div>
+        <section class="copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="btn btn--copyright" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
       </div>
     </footer>
   </body>
