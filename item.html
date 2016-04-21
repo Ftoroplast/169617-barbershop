@@ -9,30 +9,33 @@
   <body>
     <header class="site-header">
       <div class="container">
-        <div class="logo logo--nav">
-          <a href="index.html">
-            <img src="img/pic__logo--header.gif" width="111" height="24" alt="Barbershop">
-          </a>
-        </div>
         <nav class="site-navigation">
-          <ul>
-            <li>
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <div class="logo logo--nav">
+                <a href="index.html">
+                  <img src="img/pic__logo--header.gif" width="111" height="24" alt="Barbershop">
+                </a>
+              </div>
+            </li>
+            <li class="site-navigation__item">
               <a href="#">Информация</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="#">Новости</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="#">Прайс-лист</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="shop.html">Магазин</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="#">Контакты</a>
             </li>
           </ul>
         </nav>
+
         <div class="user">
           <a class="user__login" href="#">Вход</a>
         </div>
@@ -42,22 +45,20 @@
     <main class="container">
       <header class="page-header">
         <h1 class="page-header__title">Набор для путешествий &#171;Baxter of California&#187;</h1>
-        <nav class="breadcrumbs">
-          <ul>
-            <li>
-              <a href="index.html">Главная</a>
-            </li>
-            <li>
-              <a href="shop.html">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Средства для ухода</a>
-            </li>
-            <li>
-              Набор для путешествий &#171;Baxter of California&#187;
-            </li>
-          </ul>
-        </nav>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="shop.html">Магазин</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#">Средства для ухода</a>
+          </li>
+          <li class="breadcrumbs__item">
+            Набор для путешествий &#171;Baxter of California&#187;
+          </li>
+        </ul>
       </header>
 
       <section class="images">

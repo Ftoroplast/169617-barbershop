@@ -9,31 +9,33 @@
   <body>
     <header class="site-header">
       <div class="container">
-        <div class="logo logo--nav">
-          <a href="index.html">
-            <img src="img/pic__logo--header.gif" width="111" height="24" alt="Barbershop">
-          </a>
-        </div>
-
         <nav class="site-navigation">
-          <ul>
-            <li>
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <div class="logo logo--nav">
+                <a href="index.html">
+                  <img src="img/pic__logo--header.gif" width="111" height="24" alt="Barbershop">
+                </a>
+              </div>
+            </li>
+            <li class="site-navigation__item">
               <a href="#">Информация</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="#">Новости</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="#">Прайс-лист</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="shop.html">Магазин</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="#">Контакты</a>
             </li>
           </ul>
         </nav>
+
         <div class="user">
           <a class="user__login" href="#">Вход</a>
         </div>
@@ -43,25 +45,23 @@
     <main class="container">
       <header class="page-header">
         <h1 class="page-header__title">Средства для ухода</h1>
-        <nav class="breadcrumbs">
-          <ul>
-            <li>
-              <a href="index.html">Главная</a>
-            </li>
-            <li>
-              <a href="shop.html">Магазин</a>
-            </li>
-            <li>
-              Средства для ухода
-            </li>
-          </ul>
-        </nav>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="shop.html">Магазин</a>
+          </li>
+          <li class="breadcrumbs__item">
+            Средства для ухода
+          </li>
+        </ul>
       </header>
 
       <section class="filter">
         <form class="filter__form" action="#" method="POST">
-          <section class="filter__manufacturers">
-            <h2 class="filter__title">Производители:</h2>
+          <fieldset class="filter__manufacturers">
+            <legend class="filter__title">Производители:</legend>
             <label class="filter__condition">
               <input type="checkbox" name="Baxter of California" checked>
               Baxter of California
@@ -86,10 +86,10 @@
               <input type="checkbox" name="American crew" checked>
               American crew
             </label>
-          </section>
+          </fieldset>
 
-          <section class="filter__groups-of-items">
-            <h2 class="filter__title">Группы товаров:</h2>
+          <fieldset class="filter__groups-of-items">
+            <legend class="filter__title">Группы товаров:</legend>
             <label class="filter__condition">
               <input type="checkbox" name="Бритвенные принадлежности">
               Бритвенные принадлежности
@@ -102,7 +102,7 @@
               <input type="checkbox" name="Аксессуары">
               Аксессуары
             </label>
-          </section>
+          </fieldset>
 
           <input class="btn btn--filter" type="submit" value="Показать">
         </form>
@@ -118,7 +118,7 @@
           <h2 class="item__title">
             <a class="item__link" href="item.html">
               Набор для путешествий
-              <span class="item__title--manufacturer">&#171;Baxter of California&#187;</span>
+              <span class="item__title item__title--manufacturer">&#171;Baxter of California&#187;</span>
             </a>
           </h2>
           <span class="item__price">2 900 руб.</span>
@@ -134,7 +134,7 @@
           <h2 class="item__title">
             <a class="item__link" href="item.html">
               Увлажняющий кондиционер
-              <span class="item__title--manufacturer">&#171;Baxter of California&#187;</span>
+              <span class="item__title item__title--manufacturer">&#171;Baxter of California&#187;</span>
             </a>
           </h2>
           <span class="item__price">750 руб.</span>
@@ -150,7 +150,7 @@
           <h2 class="item__title">
             <a class="item__link" href="item.html">
               Гель для волос
-              <span class="item__title--manufacturer">&#171;Suavecito&#187;</span>
+              <span class="item__title item__title--manufacturer">&#171;Suavecito&#187;</span>
             </a>
           </h2>
           <span class="item__price">290 руб.</span>
@@ -166,7 +166,7 @@
           <h2 class="item__title">
             <a class="item__link" href="item.html">
               Глина для укладки волос
-              <span class="item__title--manufacturer">&#171;American crew&#187;</span>
+              <span class="item__title item__title--manufacturer">&#171;American crew&#187;</span>
             </a>
           </h2>
           <span class="item__price">500 руб.</span>
@@ -182,7 +182,7 @@
           <h2 class="item__title">
             <a class="item__link" href="item.html">
               Гель для волос
-              <span class="item__title--manufacturer">&#171;American crew&#187;</span>
+              <span class="item__title item__title--manufacturer">&#171;American crew&#187;</span>
             </a>
           </h2>
           <span class="item__price">300 руб.</span>
@@ -198,7 +198,7 @@
           <h2 class="item__title">
             <a class="item__link" href="item.html">
               Набор для бритья
-              <span class="item__title--manufacturer">&#171;Baxter of California&#187;</span>
+              <span class="item__title item__title--manufacturer">&#171;Baxter of California&#187;</span>
             </a>
           </h2>
           <span class="item__price">3 900 руб.</span>
