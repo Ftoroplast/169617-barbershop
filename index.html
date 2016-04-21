@@ -28,15 +28,15 @@
             </li>
           </ul>
         </nav>
-        <div class="user-block">
-          <a class="user-block__login" href="#">Вход</a>
+        <div class="user">
+          <a class="user__login" href="#">Вход</a>
         </div>
       </div>
     </header>
 
     <main class="container">
       <div class="logo logo--index">
-        <img src="http://placehold.it/368x204" width="368" height="204" alt="Барбершоп «Бородинский»">
+        <img src="img/pic__logo--index.png" width="368" height="204" alt="Барбершоп «Бородинский»">
       </div>
 
       <div class="features">
@@ -56,45 +56,41 @@
 
       <div class="content content--index">
         <div class="content__column content__column--left">
-          <section class="news">
-            <h2 class="news__title">Новости</h2>
-            <ul class="news__preview">
-              <li class="news__item">
-                <p class="news__description">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
-                <time class="news__datetime" datetime="2016-01-11">11 января</time>
-              </li>
-              <li class="news__item">
-                <p class="news__description">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-                <time class="news__datetime" datetime="2016-01-18">18 января</time>
-              </li>
-            </ul>
-            <a class="btn" href="#">Все новости</a>
-          </section>
+          <h2 class="content__title">Новости</h2>
+          <ul class="content__list">
+            <li class="content__item">
+              <p class="content__text">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+              <time class="content__datetime" datetime="2016-01-11">11 января</time>
+            </li>
+            <li class="content__item">
+              <p class="content__text">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+              <time class="content__datetime" datetime="2016-01-18">18 января</time>
+            </li>
+          </ul>
+          <a class="btn" href="#">Все новости</a>
         </div>
 
         <div class="content__column content__column--right">
           <h2 class="content__title">Фотогалерея</h2>
-          <div class="gallery">
-            <figure class="gallery__content">
-              <a class="gallery__link" href="#">
-                <img src="http://placehold.it/286x164" width="286" height="164" alt="">
-              </a>
-            </figure>
-            <a class="btn btn--prev" href="#">Назад</a>
-            <a class="btn btn--next" href="#">Вперёд</a>
-          </div>
+          <figure class="content__gallery">
+            <a class="content__link" href="#">
+              <img src="img/pic__gallery--barbershop-borodinski-room.jpg" width="286" height="164" alt="Barbershop Borodinski room">
+            </a>
+          </figure>
+          <a class="btn btn--prev" href="#">Назад</a>
+          <a class="btn btn--next" href="#">Вперёд</a>
         </div>
       </div>
 
       <div class="content content--index">
         <div class="content__column content__column--left">
           <h2 class="content__title">Контактная информация</h2>
-          <p>
+          <p class="content__text">
             Барбершоп «Бородинский»<br>
             Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
             Телефон: +7 (812) 666-02-66
           </p>
-          <p>
+          <p class="content__text">
             Время работы:<br>
             пн — пт: с 10:00 до 22:00<br>
             сб — вс: с 10:00 до 19:00
@@ -105,7 +101,7 @@
 
         <div class="content__column content__column--right">
           <h2 class="content__title">Записаться</h2>
-          <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+          <p class="content__text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
             <input type="text" name="date" value="" placeholder="Дата">
             <input type="text" name="time" value="" placeholder="Время">
@@ -120,10 +116,10 @@
     <footer class="site-footer">
       <div class="container">
         <section class="contacts">
-          <span class="contacts__title">Барбершоп «Бородинский»</span><br>
-          <span class="contacts__address">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</span><br>
+          <p class="contacts__title">Барбершоп «Бородинский»</p><br>
+          <p class="contacts__address">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p><br>
           <a class="contacts__link" href="#">Как нас найти?</a><br>
-          <span class="contacts__phone">Телефон: <a href="tel:+78126660266">+7 (812) 666-02-66</a></span>
+          <p class="contacts__phone">Телефон: <a href="tel:+78126660266">+7 (812) 666-02-66</a></p>
         </section>
 
         <section class="social">
