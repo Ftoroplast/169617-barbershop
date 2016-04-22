@@ -8,8 +8,8 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="container">
-        <nav class="site-navigation">
+      <div class="container row clearfix">
+        <nav class="site-navigation row col s-9">
           <ul class="site-navigation__list">
             <li class="site-navigation__item">
               <div class="logo logo--nav">
@@ -36,14 +36,14 @@
           </ul>
         </nav>
 
-        <div class="user">
+        <div class="user col s-3">
           <a class="user__login" href="#">Вход</a>
         </div>
       </div>
     </header>
 
     <main class="container">
-      <header class="page-header">
+      <header class="page-header row">
         <h1 class="page-header__title">Набор для путешествий &#171;Baxter of California&#187;</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item">
@@ -61,60 +61,66 @@
         </ul>
       </header>
 
-      <section class="images">
-        <div class="image image--big">
-          <img src="img/pic__item--set_travel_baxter_of_california.jpg" width="460" height="498" alt="Набор для путешествий &#171;Baxter of California&#187;">
-        </div>
-        <div class="image">
-          <img src="img/pic__item--set_travel_baxter_of_california_1.jpg" width="140" height="149" alt="Набор для путешествий &#171;Baxter of California&#187;">
-        </div>
-        <div class="image">
-          <img src="img/pic__item--set_travel_baxter_of_california_2.jpg" width="140" height="149" alt="Набор для путешествий &#171;Baxter of California&#187;">
-        </div>
-        <div class="image">
-          <img src="img/pic__item--set_travel_baxter_of_california.jpg" width="140" height="149" alt="Набор для путешествий &#171;Baxter of California&#187;">
-        </div>
-      </section>
+      <div class="row clearfix">
+        <section class="images col s-6">
+          <div class="image image--big">
+            <img src="img/pic__item--set_travel_baxter_of_california.jpg" width="460" height="498" alt="Набор для путешествий &#171;Baxter of California&#187;">
+          </div>
+          <div class="image">
+            <img src="img/pic__item--set_travel_baxter_of_california_1.jpg" width="140" height="149" alt="Набор для путешествий &#171;Baxter of California&#187;">
+          </div>
+          <div class="image">
+            <img src="img/pic__item--set_travel_baxter_of_california_2.jpg" width="140" height="149" alt="Набор для путешествий &#171;Baxter of California&#187;">
+          </div>
+          <div class="image">
+            <img src="img/pic__item--set_travel_baxter_of_california.jpg" width="140" height="149" alt="Набор для путешествий &#171;Baxter of California&#187;">
+          </div>
+        </section>
 
-      <section class="description">
-        <span class="description__available-status">Есть в наличии</span>
-        <span class="description__vendor-code">Артикул: Dexter-AE</span>
-        <p class="description__text">Travel Kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится всё,
-          что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья,
-          крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-        <span class="description__price">2 900 руб.</span>
-        <a class="btn btn--buy" href="#">Купить</a>
-      </section>
+        <div class="col s-6">
+          <section class="description">
+            <span class="description__available-status">Есть в наличии</span>
+            <span class="description__vendor-code">Артикул: Dexter-AE</span>
+            <p class="description__text">Travel Kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится всё,
+              что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья,
+              крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+            <span class="description__price">2 900 руб.</span>
+            <a class="btn btn--buy" href="#">Купить</a>
+          </section>
 
-      <section class="composition">
-        <h2 class="composition__title">В набор входят:</h2>
-        <ul class="composition__list">
-          <li class="composition__item">Средство для умывания (50 мл)</li>
-          <li class="composition__item">Увлажняющий крем (50 мл)</li>
-          <li class="composition__item">Крем для бритья (50 мл)</li>
-          <li class="composition__item">Крем после бритья, шампунь (50 мл)</li>
-          <li class="composition__item">Удобная кожаная косметичка</li>
-        </ul>
-      </section>
+          <section class="composition">
+            <h2 class="composition__title">В набор входят:</h2>
+            <ul class="composition__list">
+              <li class="composition__item">Средство для умывания (50 мл)</li>
+              <li class="composition__item">Увлажняющий крем (50 мл)</li>
+              <li class="composition__item">Крем для бритья (50 мл)</li>
+              <li class="composition__item">Крем после бритья, шампунь (50 мл)</li>
+              <li class="composition__item">Удобная кожаная косметичка</li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer class="site-footer">
-      <div class="container">
-        <section class="contacts">
-          <span class="contacts__title">Барбершоп «Бородинский»</span><br>
-          <span class="contacts__address">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</span><br>
-          <a class="contacts__link" href="#">Как нас найти?</a><br>
-          <span class="contacts__phone">Телефон: <a href="tel:+78126660266">+7 (812) 666-02-66</a></span>
+      <div class="container row clearfix">
+        <section class="contacts col s-5">
+          <p class="contacts__title">Барбершоп «Бородинский»</p>
+          <p class="contacts__address">Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+          <p class="contacts__link">
+            <a href="#">Как нас найти?</a>
+          </p>
+          <p class="contacts__phone">Телефон: <a href="tel:+78126660266">+7 (812) 666-02-66</a></p>
         </section>
 
-        <section class="social">
+        <section class="social col s-2">
           <p class="social__text">Давайте дружить!</p>
           <a class="social__btn social__btn--vk" href="#">Вконтакте</a>
           <a class="social__btn social__btn--fb" href="#">Фейсбук</a>
           <a class="social__btn social__btn--inst" href="#">Инстаграм</a>
         </section>
 
-        <section class="copyright">
+        <section class="copyright col s-5">
           <p class="copyright__text">Разработано:</p>
           <a class="btn btn--copyright" href="https://htmlacademy.ru">HTML Academy</a>
         </section>
