@@ -30,7 +30,7 @@ h2 {
   float: left;
   padding: 0 10px;
   box-sizing: border-box;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .s-1 {
